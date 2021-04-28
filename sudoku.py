@@ -25,7 +25,7 @@ def readGridPhoto(grid_photo):
     box_width = img_width / 9
     box_height = img_height / 9
     Matrix = numpy.zeros((9, 9), dtype=int)
-    edge_buffer = 30
+    edge_buffer = box_width / 10
     for y in range(0,9):
         for x in range(0,9):
             #Cut the image up into cells
